@@ -14,3 +14,69 @@ body{
     font-family: 'League Spartan', sans-serif;
     background: #3A4663;
 }
+
+.container{
+    width: 540px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.header h1{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.533px;
+    margin-left: 7px;
+}
+
+.theme-selector{
+    display: flex;
+    align-items: flex-end;
+}
+
+.theme-selector p{
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 26px;
+}
+
+.input-label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#theme-selector-input{
+    -webkit-appearance: none;
+    width: 71px;
+    background: #242D44;
+    padding: 6px 5px;
+    border-radius: 13px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #D03F2F;
+    cursor: pointer;
+}
