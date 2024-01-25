@@ -14,9 +14,56 @@
             <h1>calc</h1>
             <div class="theme-selector">
                 <p>THEME</p>
-                <input type="range" min="1" max="3">
+                <label for="theme-selector-input">
+                    <span>
+                        1
+                    </span>
+                    <span>
+                        2
+                    </span>
+                    <span>
+                        3
+                    </span>
+                </label>
+                <input type="range" min="1" max="3" id="theme-selector-input">
             </div>
         </header>
+        <div class="result-container">
+            <span class="result"></span>
+        </div>
+        <div class="calculator-operations-container">
+            <table>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>DEL</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>.</td>
+                    <td>0</td>
+                    <td>/</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>RESET</td>
+                    <td>=</td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 </body>
 </html>
