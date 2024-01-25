@@ -55,7 +55,7 @@ body{
 
 .input-label{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 5px;
     color: #FFF;
     font-size: 12px;
