@@ -80,3 +80,20 @@ input[type="range"]::-webkit-slider-thumb{
     background: #D03F2F;
     cursor: pointer;
 }
+
+.result-container{
+    height: 128px;
+    border-radius: 10px;
+    background: #181F33;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.result{
+    color: #FFF;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.933px;
+    margin-right: 32px;
+}
