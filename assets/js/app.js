@@ -1,7 +1,6 @@
 const numbers = document.querySelectorAll('.number');
 const operators = document.querySelectorAll('.operator');
 const currentResult = document.querySelector('#current-result');
-const previousResult = document.querySelector('#previous-result');
 const del = document.querySelector('#del');
 const reset = document.querySelector('#reset');
 const equal = document.querySelector('#equal');
@@ -37,8 +36,19 @@ function clear(){
     previousResult.innerHTML = "";
 }
 
+
+function clearError(){
+    currentResult.innerHTML = "";
+}
+
 function calculate(){
-    currentResult.innerHTML = eval(currentResult.innerHTML);
+    try{
+        currentResult.innerHTML = eval(currentResult.innerHTML);
+    }
+    catch(error){
+        currentResult.innerHTML = "Error";
+        setTimeout(clearError,2000)
+    }
 }
 
 function removeLastNumber(){
