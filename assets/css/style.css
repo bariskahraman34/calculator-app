@@ -12,7 +12,6 @@ body{
     align-items: center;
     justify-content: center;
     font-family: 'League Spartan', sans-serif;
-    background: #3A4663;
 }
 
 .container{
@@ -27,7 +26,6 @@ body{
 }
 
 .header h1{
-    color: #FFF;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -0.533px;
@@ -40,7 +38,6 @@ body{
 }
 
 .theme-selector p{
-    color: #FFF;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -57,7 +54,6 @@ body{
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
-    color: #FFF;
     font-size: 12px;
     font-weight: 700;
 }
@@ -65,7 +61,6 @@ body{
 #theme-selector-input{
     -webkit-appearance: none;
     width: 71px;
-    background: #242D44;
     padding: 6px 5px;
     border-radius: 13px;
     background-repeat: no-repeat;
@@ -77,14 +72,12 @@ input[type="range"]::-webkit-slider-thumb{
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: #D03F2F;
     cursor: pointer;
 }
 
 .result-container{
     height: 128px;
     border-radius: 10px;
-    background: #181F33;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -103,7 +96,6 @@ input[type="range"]::-webkit-slider-thumb{
 .calculator-operations-container{
     margin-top: 24px;
     border-radius: 10px;
-    background: #242D44;
     padding: 32px;
 }
 
@@ -125,7 +117,6 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 .calculator-operations-row td{
-    color: #434A59;
     text-align: center;
     font-size: 40px;
     font-weight: 700;
@@ -152,24 +143,70 @@ input[type="range"]::-webkit-slider-thumb{
     border-radius: 10px !important;
 }
 
-#reset{
-    background: #647198;
-    box-shadow: 0px -4px 0px 0px #414E73 inset;
-}
-
-#equal{
-    background: #D03F2F;
-    box-shadow: 0px -4px 0px 0px #93261A inset;
-}
-
 #del{
-    background: #647198;
-    box-shadow: 0px -4px 0px 0px #414E73 inset;
-    color: #FFF;
     font-size: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Default Theme */
+
+.default-theme{
+    background:#3A4663;;
+    transition: all .5s ease;
+}
+
+.default-theme .result{
+    transition: all .5s ease;
+    color: #FFF;
+}
+
+.default-theme .calculator-operations-row td{
+    transition: all .5s ease;
+    color: #36362C;
+}
+
+.default-theme .header span,
+.default-theme .header h1,
+.default-theme .header p{
+    transition: all .5s ease;
+    color: #fff;
+}
+
+.default-theme #theme-selector-input{
+    transition: all .5s ease;
+    background: #242D44;
+}
+
+.default-theme input[type="range"]::-webkit-slider-thumb{
+    transition: all .5s ease;
+    background: #C85402;
+}
+
+.default-theme .result-container{
+    transition: all .5s ease;
+    background: #242D44;
+}
+
+.default-theme #del,
+.default-theme #reset{
+    transition: all .5s ease;
+    color: #fff;
+    background: #647198;
+    box-shadow: 0px -4px 0px 0px #414E73 inset;
+}
+
+.default-theme #equal{
+    transition: all .5s ease;
+    background: #D03F2F;
+    color: #fff;
+    box-shadow: 0px -4px 0px 0px #93261A inset;
+}
+
+.default-theme .calculator-operations-container{
+    transition: all .5s ease;
+    background: #242D44;
 }
 
 
@@ -194,6 +231,11 @@ input[type="range"]::-webkit-slider-thumb{
     background: #D2CDCD;
 }
 
+.light-theme input[type="range"]::-webkit-slider-thumb{
+    transition: all .5s ease;
+    background: #C85402;
+}
+
 .light-theme .result-container{
     transition: all .5s ease;
     background: #EEE;
@@ -203,6 +245,8 @@ input[type="range"]::-webkit-slider-thumb{
 .light-theme #reset{
     transition: all .5s ease;
     background: #378187;
+    color: #fff;
+    box-shadow: 0px -4px 0px 0px #1B6066 inset;
 }
 
 .light-theme #equal{
@@ -228,13 +272,18 @@ input[type="range"]::-webkit-slider-thumb{
 .purple-theme .header span,
 .purple-theme .result,
 .purple-theme .calculator-operations-row td{
-    color: #FFE53D;
+    color: #FFF;
     transition: all .5s ease;
 }
 
 .purple-theme #theme-selector-input{
     background: #1E0936;
     transition: all .5s ease;
+}
+
+.purple-theme input[type="range"]::-webkit-slider-thumb{
+    transition: all .5s ease;
+    background: #00DED0;
 }
 
 .purple-theme .result-container{
