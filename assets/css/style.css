@@ -171,3 +171,35 @@ input[type="range"]::-webkit-slider-thumb{
     align-items: center;
     justify-content: center;
 }
+
+
+/* Light Theme */
+
+.light-theme{
+    background: #E6E6E6;
+}
+
+.light-theme .header h1,
+.light-theme .header p,
+.light-theme .header span,
+.light-theme .result,
+.light-theme .calculator-operations-row td{
+    color: #36362C;
+}
+
+.light-theme #theme-selector-input{
+    background: #D2CDCD;
+}
+
+.light-theme .result-container{
+    background: #EEE;
+}
+
+.light-theme #del,
+.light-theme #reset{
+    background: #378187;
+}
+
+.light-theme .calculator-operations-container{
+    background: #D2CDCD;
+}
