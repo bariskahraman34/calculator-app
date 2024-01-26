@@ -177,6 +177,7 @@ input[type="range"]::-webkit-slider-thumb{
 
 .light-theme{
     background: #E6E6E6;
+    transition: all .5s ease;
 }
 
 .light-theme .header h1,
@@ -184,28 +185,34 @@ input[type="range"]::-webkit-slider-thumb{
 .light-theme .header span,
 .light-theme .result,
 .light-theme .calculator-operations-row td{
+    transition: all .5s ease;
     color: #36362C;
 }
 
 .light-theme #theme-selector-input{
+    transition: all .5s ease;
     background: #D2CDCD;
 }
 
 .light-theme .result-container{
+    transition: all .5s ease;
     background: #EEE;
 }
 
 .light-theme #del,
 .light-theme #reset{
+    transition: all .5s ease;
     background: #378187;
 }
 
 .light-theme #equal{
+    transition: all .5s ease;
     background: #C85402;
     box-shadow: 0px -4px 0px 0px #873901 inset;
 }
 
 .light-theme .calculator-operations-container{
+    transition: all .5s ease;
     background: #D2CDCD;
 }
 
@@ -213,6 +220,7 @@ input[type="range"]::-webkit-slider-thumb{
 
 .purple-theme{
     background: #17062A;
+    transition: all .5s ease;
 }
 
 .purple-theme .header h1,
@@ -221,34 +229,41 @@ input[type="range"]::-webkit-slider-thumb{
 .purple-theme .result,
 .purple-theme .calculator-operations-row td{
     color: #FFE53D;
+    transition: all .5s ease;
 }
 
 .purple-theme #theme-selector-input{
     background: #1E0936;
+    transition: all .5s ease;
 }
 
 .purple-theme .result-container{
     background: #1E0936;
+    transition: all .5s ease;
 }
 
 .purple-theme #del,
 .purple-theme #reset{
     background: #56077C;
     box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+    transition: all .5s ease;
 }
 
 .purple-theme .calculator-operations-container{
     background: #1E0936;
+    transition: all .5s ease;
 }
 
 .purple-theme .number,
 .purple-theme .operator{
     background: #331C4D;
     box-shadow: 0px -4px 0px 0px #881C9E inset;
+    transition: all .5s ease;
 }
 
 .purple-theme #equal{
     background: #00DED0;
     box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
     color: #1A2327 !important;
+    transition: all .5s ease;
 }

@@ -33,7 +33,6 @@ function printOperatorToScreen(e){
 
 function clear(){
     currentResult.innerHTML = "";
-    previousResult.innerHTML = "";
 }
 
 
